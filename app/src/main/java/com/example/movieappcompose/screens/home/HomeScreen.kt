@@ -31,6 +31,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.movieappcompose.navigation.MovieScreens
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -61,8 +62,8 @@ fun MainContent(navController: NavController,
         .padding(12.dp)) {
         LazyColumn {
             items(items = movieList){
-                MovieRow(it){ movie ->
-
+                MovieRow(it){
+                    navController.navigate(route = MovieScreens.DetailScreen.name)
                 }
             }
         }
