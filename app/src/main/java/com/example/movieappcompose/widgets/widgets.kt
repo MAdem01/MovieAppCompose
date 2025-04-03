@@ -13,6 +13,7 @@ import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.HorizontalDivider
@@ -27,7 +28,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
@@ -70,7 +73,9 @@ fun MovieRow(movie: Movie = getMovies()[0], onItemClick: (String) -> Unit = {}) 
             ) {
                 AsyncImage(
                     model = movie.images[0],
-                    contentDescription = "Movie Poster"
+                    contentDescription = "Movie Poster",
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier.clip(CircleShape)
                 )
             }
             Column(
@@ -112,7 +117,7 @@ fun MovieRow(movie: Movie = getMovies()[0], onItemClick: (String) -> Unit = {}) 
                 }
 
 
-                Icon(imageVector = if(!expanded) Icons.Filled.KeyboardArrowDown else Icons.Filled.KeyboardArrowDown,
+                Icon(imageVector = if(!expanded) Icons.Filled.KeyboardArrowDown else Icons.Filled.KeyboardArrowUp,
                     contentDescription = "Down Arrow",
                     modifier = Modifier.size(25.dp)
                         .clickable {

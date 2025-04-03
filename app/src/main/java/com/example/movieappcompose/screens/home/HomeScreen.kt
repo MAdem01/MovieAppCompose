@@ -1,6 +1,5 @@
 package com.example.movieappcompose.screens.home
 
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -44,13 +43,10 @@ fun HomeScreen(navController: NavController) {
 @Composable
 fun MainContent(navController: NavController,
                 movieList: List<Movie> = getMovies()){
-    Column(modifier = Modifier
-        .padding(12.dp)) {
-        LazyColumn {
-            items(items = movieList){
-                MovieRow(it){ movie ->
-                    navController.navigate(route = MovieScreens.DetailScreen.name+"/$movie")
-                }
+    LazyColumn(modifier = Modifier.padding(12.dp)) {
+        items(items = movieList){
+            MovieRow(it){ movie ->
+                navController.navigate(route = MovieScreens.DetailScreen.name+"/$movie")
             }
         }
     }
