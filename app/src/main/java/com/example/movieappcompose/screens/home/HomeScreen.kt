@@ -44,13 +44,10 @@ fun HomeScreen(navController: NavController) {
 @Composable
 fun MainContent(navController: NavController,
                 movieList: List<Movie> = getMovies()){
-    Column(modifier = Modifier
-        .padding(12.dp)) {
-        LazyColumn {
-            items(items = movieList){
-                MovieRow(it){ movie ->
-                    navController.navigate(route = MovieScreens.DetailScreen.name+"/$movie")
-                }
+    LazyColumn(modifier = Modifier.padding(12.dp)) {
+        items(items = movieList){
+            MovieRow(it){ movie ->
+                navController.navigate(route = MovieScreens.DetailScreen.name+"/$movie")
             }
         }
     }
