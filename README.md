@@ -20,5 +20,5 @@ The project is a game where the user guesses a 5-letter word by using the in-bui
 ### Result Screen
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f2ced656-5902-4c32-b508-1a29bb451b51" alt="Game Screenshot" width="400"/>
+  <img src="https://github.com/user-attachments/assets/be9d796b-1771-489c-b670-31a2cdeb7e66" alt="Game Screenshot" width="400"/>
 </p>
