@@ -9,3 +9,16 @@ The project is a game where the user guesses a 5-letter word by using the in-bui
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c8e3c0f3-870e-41bb-96af-c4b5e798acfc" alt="Game Screenshot" width="400"/>
 </p>
+
+### Guessing a word
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/69b6bcd5-71cc-4e05-bb1f-449d712319a6" alt="Guessing GIF" width="400"/>
+</p>
+
+
+### Result Screen
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f2ced656-5902-4c32-b508-1a29bb451b51" alt="Game Screenshot" width="400"/>
+</p>
