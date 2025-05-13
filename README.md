@@ -33,7 +33,7 @@ This app is a simple demonstration of modern Android UI development using **Jetp
 ### 🎞️ Movie List Screen
 
 <p align="center">
-  <img src="screenshots/movie_list.png" width="250"/>
+  <img src="screenshot/494357733_24009799948637808_2360451214437866329_n.jpg" width="250"/>
 </p>
 
 - Displays a scrollable list of movie titles with posters.
@@ -43,7 +43,7 @@ This app is a simple demonstration of modern Android UI development using **Jetp
 ### 📃 Movie Details Screen
 
 <p align="center">
-  <img src="screenshots/movie_details.png" width="250"/>
+  <img src="screenshot/494355479_673963158705473_621077547424385905_n.jpg" width="250"/>
 </p>
 
 - Shows full details for the selected movie.
