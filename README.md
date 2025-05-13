@@ -1,59 +1,59 @@
-# 🎮 Jetpack Compose Wordle Clone
+# 🎬 Jetpack Compose Movie App
 
-A sleek, Android-native clone of the popular **Wordle** game, built using modern Android development tools like **Jetpack Compose**, **Navigation**, and **Retrofit**.
+A lightweight Android Movie App built with **Jetpack Compose**, featuring a scrollable list of movies and a detailed info screen for each title.
 
 ---
 
-## 🧩 About the Game
+## 🧩 About the App
 
-This project is a mobile game where the player guesses a **5-letter word** using the built-in keyboard. After each guess, the game evaluates and provides feedback:
+This app is a simple demonstration of modern Android UI development using **Jetpack Compose**. It displays a **static list of movies** with titles, posters, and brief info, and allows users to tap on any movie to see more details.
 
-- 🟩 **Green**: Letter is in the correct position.
-- 🟨 **Yellow**: Letter exists in the word but in the wrong position.
-- ⬛ **Gray**: Letter is not in the word.
+---
 
-The goal is to guess the correct word within a limited number of tries — just like the original Wordle!
+## 📱 Features
+
+- 🧾 **Movie List Screen** – Scroll through a list of popular movies.
+- 📄 **Movie Details Screen** – Tap on a movie to view its full details including title, poster, release year, genre, and description.
+- 📷 **Poster Previews** – Uses local images or network resources for movie posters.
+- ⚡ **Jetpack Compose UI** – Smooth, declarative UI built with Material 3.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Jetpack Compose** – Declarative UI framework for Android.
-- **Jetpack Navigation** – For navigating between screens.
-- **Retrofit** – To fetch the word of the day from an external API.
-- **Material 3** – Modern UI components for a clean and minimal look.
+- **Jetpack Compose** – Modern declarative UI framework for Android.
+- **Material 3** – Clean and responsive design system.
+- **Navigation Compose** – Simple navigation between list and detail screens.
+- **Coil** – For loading images if posters are from URLs.
 
 ---
 
-## 📱 Screenshots & Gameplay
+## 📸 Screenshots
 
-### 🏠 Home Screen
+### 🎞️ Movie List Screen
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c8e3c0f3-870e-41bb-96af-c4b5e798acfc" alt="Home Screen" width="400"/>
+  <img src="screenshots/movie_list.png" width="250"/>
 </p>
+
+- Displays a scrollable list of movie titles with posters.
 
 ---
 
-### 🎯 Guessing a Word
+### 📃 Movie Details Screen
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/69b6bcd5-71cc-4e05-bb1f-449d712319a6" alt="Guessing GIF" width="400"/>
+  <img src="screenshots/movie_details.png" width="250"/>
 </p>
 
----
-
-### 🏁 Result Screen
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/be9d796b-1771-489c-b670-31a2cdeb7e66" alt="Result Screen" width="400"/>
-</p>
+- Shows full details for the selected movie.
 
 ---
 
 ## 🚀 Future Improvements
 
-- Add difficulty levels (e.g., 6-letter mode).
-- Store and track high scores and streaks.
-- Include a dark mode toggle.
-- Animate keyboard feedback and transitions.
+- Integrate with a real API (e.g. TMDb or OMDb).
+- Add search and filter functionality.
+- Support for genres, trailers, and ratings.
+- Add persistent favorites.
+- Light/dark mode toggle.
